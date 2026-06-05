@@ -8,24 +8,25 @@ This Privacy Policy explains how **The Cage** ("we", "our", or "us") handles inf
 
 We collect only the data necessary to provide the app's core functionality:
 
-- **Camera:** The app requests access to your device camera solely to enable in-app features. Camera data is processed on-device and is never transmitted to our servers.
+- **Name / Nickname:** When joining the app using an invite code, users provide a name or nickname. This name is stored on our servers and is visible to other members within the app.
+- **Camera & Images:** The app requests access to your device camera. Authorized users (admins) may upload images through the app. Uploaded images are stored on our servers (Supabase).
 - **Push Notifications:** With your permission, we send push notifications to keep you informed about relevant app activity. You can disable notifications at any time in your device settings.
 
 ## Information We Do Not Collect
 
-We do not collect, store, or share:
+We do not collect:
 
-- Personal identification information (name, email, phone number)
+- Email addresses or phone numbers
 - Location data
 - Usage analytics or crash reports sent to third parties
 
 ## Third-Party Services
 
-The Cage does not integrate any third-party analytics, advertising, or tracking services.
+The Cage uses **Supabase** as its backend infrastructure for data storage (names, uploaded images). Supabase's privacy policy is available at [supabase.com/privacy](https://supabase.com/privacy).
 
 ## Data Storage
 
-Any data processed by the app remains on your device. We do not operate servers that store personal data.
+User-provided names and uploaded images are stored on Supabase servers. Data is retained as long as the user's account is active. To request deletion of your data, contact us at the address below.
 
 ## Children's Privacy
 
