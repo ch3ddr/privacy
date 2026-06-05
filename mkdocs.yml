@@ -1,0 +1,22 @@
+site_name: ch3ddi – Privacy Policies
+site_url: https://ch3ddi.github.io/privacy/
+site_description: Privacy Policies for apps by ch3ddi
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.top
+
+nav:
+  - Home: index.md
+  - The Cage: the-cage.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
