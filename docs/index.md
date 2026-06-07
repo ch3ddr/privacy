@@ -1,6 +1,6 @@
 # Privacy Policies
 
-Privacy policies for all apps published by **ch3ddi**.
+Privacy policies for all apps published by **ch3ddr**.
 
 ## Apps
 
