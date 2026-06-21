@@ -15,6 +15,7 @@ theme:
 nav:
   - Home: index.md
   - The Cage: the-cage.md
+  - Camping Village: camping-village.md
   - Account Deletion: delete-account.md
 
 markdown_extensions:
