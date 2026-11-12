@@ -4,6 +4,7 @@ site_description: Privacy Policies for apps by ch3ddr
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     scheme: slate
     primary: black
