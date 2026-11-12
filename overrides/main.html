@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{#
+  Camping Village has its own website now; its privacy policy lives at
+  https://camping-village.app/datenschutz. Only that page forwards; the other
+  apps' pages and the deletion page stay as they are.
+#}
+{% if page and page.file and page.file.src_uri == "camping-village.md" %}
+  {% set forward_to = "https://camping-village.app/datenschutz" %}
+{% endif %}
+
+{% block site_meta %}
+  {% if forward_to %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ forward_to }}">
+    <link rel="canonical" href="{{ forward_to }}">
+    <link rel="icon" href="{{ config.theme.favicon | url }}">
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% if forward_to %}
+    <div class="admonition warning">
+      <p class="admonition-title">Umgezogen / Moved</p>
+      <p>Die Datenschutzerklärung von Camping Village findet ihr jetzt unter
+        <a href="{{ forward_to }}">{{ forward_to }}</a>. Ihr werdet gleich weitergeleitet.</p>
+      <p>The Camping Village privacy policy has moved to
+        <a href="{{ forward_to }}">{{ forward_to }}</a>. You will be redirected shortly.</p>
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
